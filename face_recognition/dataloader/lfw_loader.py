@@ -96,6 +96,6 @@ if __name__ == '__main__':
         print(image_path)
         if not os.path.exists(image_path):
             os.mkdir(image_path)
-        if not os.path.exists(unique_image_urls_path_0):
-            os.system("wget -c {} -O {}".format(image_urls_0, unique_image_urls_path_0))
-        exit()
+        # if not os.path.exists(unique_image_urls_path_0):
+        os.system("wget -c {} -O {}".format(image_urls_0, unique_image_urls_path_0))
+        # exit()
